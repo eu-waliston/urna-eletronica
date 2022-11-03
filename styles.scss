@@ -1,0 +1,214 @@
+body {
+    height: 100vh;
+    background-color: rgb(252, 252, 252) !important;
+    overflow: hidden;
+
+    background: linear-gradient(205deg, #e4d60a, #bdc10b, #4fe40a, #318909);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 28s ease infinite;
+    -moz-animation: AnimationName 28s ease infinite;
+    animation: AnimationName 28s ease infinite;
+
+
+    @-webkit-keyframes AnimationName {
+        0% {
+            background-position: 65% 0%
+        }
+
+        50% {
+            background-position: 36% 100%
+        }
+
+        100% {
+            background-position: 65% 0%
+        }
+    }
+
+    @-moz-keyframes AnimationName {
+        0% {
+            background-position: 65% 0%
+        }
+
+        50% {
+            background-position: 36% 100%
+        }
+
+        100% {
+            background-position: 65% 0%
+        }
+    }
+
+    @keyframes AnimationName {
+        0% {
+            background-position: 65% 0%
+        }
+
+        50% {
+            background-position: 36% 100%
+        }
+
+        100% {
+            background-position: 65% 0%
+        }
+    }
+
+
+    #urna {
+        position: relative;
+        margin-left: 15%;
+        background-color: rgb(80, 78, 78);
+        padding: 30px;
+        height: 700px;
+        width: 1300px;
+        margin-top: 3%;
+        border-radius: 20px;
+
+
+        #tela {
+            height: 500px;
+            width: 700px;
+            background-color: white;
+            position: relative;
+            top: 10%;
+            border-radius: 10px;
+
+            h4 {
+                margin-left: 25px;
+                padding-top: 20px;
+            }
+
+            #voto {
+                margin-left: 20%;
+            }
+
+            input {
+                font-size: 44px;
+                font-weight: bold;
+            }
+            .input-voto1, .input-voto2 {
+                width: 70px;
+                height: 50px;
+                position: relative;
+                left: 20%;
+
+            }
+
+            #libras {
+                position: absolute;
+                left: 500px;
+                top: 319px;
+                width: 188px;
+                height: 180px;
+
+                background-color: transparent;
+                background-image: url('public/assets/depFederal.gif');
+                background-size: 187px 180px;
+            }
+
+            .ddf {
+                position: relative;
+                top: 9%;
+            }
+        }
+
+        #teclas-quadro {
+            position: relative;
+            left: 60%;
+            background-color: rgb(8, 8, 8);
+            height: 490px;
+            width: 490px;
+            top: -67.5%;
+            border-radius: 10px;
+
+            .justica {
+                text-align: center;
+                font-size: 30px;
+                font-weight: bold;
+                color: #fff;
+                text-transform: uppercase;
+                padding-top: 20px;
+
+
+            }
+
+            .teclas {
+
+                button {
+                    background-color: rgb(0, 0, 0);
+                    color: #fff;
+                    border: 3px solid rgb(29, 28, 28) !important;
+                    border-radius: 5px;
+                    box-shadow: 2px 2px 1px rgb(63, 60, 60);
+
+                    &:hover {
+                        background-color: rgb(24, 23, 23);
+                        transition: all 0.3s;
+
+                        height: 51px;
+                    }
+                }
+
+                font-size: 28px;
+                height: 280px;
+                display: grid;
+                grid-template-columns: repeat(3, 120px);
+                gap: 20px;
+                position: relative;
+                left: 10%;
+                padding-top: 15px;
+
+                .end-number {
+                    position: relative;
+                    left: 117%;
+                }
+
+
+
+            }
+
+            .end-teclas {
+
+                font-size: 25px;
+                height: 60px;
+                display: grid;
+                grid-template-columns: repeat(3, 130px);
+                gap: 10px;
+                position: relative;
+                top: 10%;
+                left: 9%;
+
+                button {
+                    background-color: rgb(0, 0, 0);
+                    color: #fff;
+                    border: 3px solid rgb(29, 28, 28) !important;
+                    border-radius: 5px;
+                    box-shadow: 2px 2px 1px rgb(63, 60, 60);
+
+
+                }
+
+                .branco {
+                    background-color: #fff;
+                    color: #000;
+
+                }
+
+                .laranja {
+                    background-color: orangered;
+                    color: #000;
+                }
+
+                .verde {
+                    background-color: green;
+                    color: #000;
+                }
+
+
+            }
+
+        }
+    }
+
+
+}
